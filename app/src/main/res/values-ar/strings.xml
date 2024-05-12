@@ -8,4 +8,7 @@
     <string name="Content_Title">اشعار</string>
     <string name="rating">تقيم</string>
     <string name="feedback_message">رساله التقيم</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="feedback_dialog">تقيم</string>
 </resources>

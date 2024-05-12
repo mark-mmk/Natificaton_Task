@@ -30,6 +30,7 @@ class result : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
         val dialogView = layoutInflater.inflate(R.layout.custom_dialog, null)
         val builder = AlertDialog.Builder(this@result)
         builder.setView(dialogView)
@@ -51,9 +52,14 @@ class result : AppCompatActivity() {
         val notificationManger =
             getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManger.createNotificationChannel(channel)
+
         val intent = Intent(this, MainActivity::class.java)
         val pendingIntent =
-            PendingIntent.getActivities(this, 20, arrayOf(intent), PendingIntent.FLAG_IMMUTABLE)
+            PendingIntent.getActivities(
+                this, 20,
+                arrayOf(intent), PendingIntent.FLAG_IMMUTABLE
+            )
+
         feedback = findViewById(R.id.feedback)
         feedback.setOnClickListener {
             positiveButton.setOnClickListener {

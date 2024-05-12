@@ -7,4 +7,8 @@
     <string name="Content_Title">Notificatons</string>
     <string name="rating">Rating</string>
     <string name="feedback_message">Feedback</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="feedback_dialog">Feedback</string>
+
 </resources>
